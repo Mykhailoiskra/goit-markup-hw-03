@@ -17,24 +17,29 @@
   <body>
     <header>
       <div class="container">
-        <nav>
+        <nav class="header-nav">
           <a class="logo-header" href="./index.html" lang="en"
             ><span>Web</span> Studio</a
           >
           <ul class="site-nav list">
-            <li><a class="link current" href="#">Студия</a></li>
-            <li><a class="link" href="./portfolio.html">Портфолио</a></li>
-            <li><a class="link" href="#">Контакты</a></li>
+            <li class="item">
+              <a class="link current" href="./index.html">Студия</a>
+            </li>
+            <li class="item">
+              <a class="link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="item"><a class="link" href="#">Контакты</a></li>
           </ul>
+
+          <address class="nav-address">
+            <a class="contact-link" href="mailto:info@devstudio.com">
+              info@devstudio.com</a
+            >
+            <a class="contact-link" href="tel:+380961111111">
+              +38 096 111 11 11</a
+            >
+          </address>
         </nav>
-        <address>
-          <a class="contact-link" href="mailto:info@devstudio.com">
-            info@devstudio.com</a
-          >
-          <a class="contact-link" href="tel:+380961111111">
-            +38 096 111 11 11</a
-          >
-        </address>
       </div>
     </header>
     <main>
@@ -51,29 +56,29 @@
         <div class="container">
           <h2 class="is-hidden">Наши компетенции</h2>
           <!-- SVG картинки не вставлял т.к. Репета на вебинаре сказал, что они будут добавляться с помощью CSS -->
-          <ul class="list">
-            <li>
+          <ul class="competencies-list list">
+            <li class="item">
               <h3 class="title">Внимание к деталям</h3>
               <p class="description">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Пунктуальность</h3>
               <p class="description">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Планирование</h3>
               <p class="description">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Современные технологии</h3>
               <p class="description">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -88,7 +93,7 @@
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="examples list">
-            <li>
+            <li class="item">
               <img
                 src="./images/laptop.jpg"
                 alt="ноутбук на столе"
@@ -96,14 +101,14 @@
               />
               <a class="link" href="#"> Десктопные приложения</a>
             </li>
-            <li>
+            <li class="item">
               <img src="./images/mobile-phone.jpg" alt="мобильный телефон" /><a
                 class="link"
                 href="#"
                 >Мобильные приложения
               </a>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/monitor.jpg"
                 alt="монитор с изображением веб странички"
@@ -118,7 +123,7 @@
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team list">
-            <li>
+            <li class="item">
               <img
                 src="./images/john-smith.jpg"
                 alt="фото джона смита"
@@ -127,21 +132,21 @@
               <h3 class="title" lang="en">John Smith</h3>
               <p lang="en">Product Designer</p>
               <ul class="team-links list">
-                <li>
-                  <a href="#" aria-label="instagram">instagram</a>
+                <li class="element">
+                  <a href="#" aria-label="instagram"><span class="placeholder"></a>
                 </li>
-                <li>
-                  <a href="#" aria-label="twitter">twitter</a>
+                <li class="element">
+                  <a href="#" aria-label="twitter"><span class="placeholder"></a>
                 </li>
-                <li>
-                  <a href="#" aria-label="facebook">facebook</a>
+                <li class="element">
+                  <a href="#" aria-label="facebook"><span class="placeholder"></a>
                 </li>
-                <li>
-                  <a href="#" aria-label="linkedin">linkedin</a>
+                <li class="element">
+                  <a href="#" aria-label="linkedin"><span class="placeholder"></a>
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/marta-stewart.jpg"
                 alt="фото марты стюарт"
@@ -150,21 +155,23 @@
               <h3 class="title" lang="en">Marta Stewart</h3>
               <p lang="en">Frontend Developer</p>
               <ul class="team-links list">
-                <li>
-                  <a href="#" aria-label="instagram">instagram</a>
+                <li class="element">
+                  <a href="#" aria-label="instagram"
+                    ><span class="placeholder"></span
+                  ></a>
                 </li>
-                <li>
-                  <a href="#" aria-label="twitter">twitter</a>
+                <li class="element">
+                  <a href="#" aria-label="twitter"><span class="placeholder"></a>
                 </li>
-                <li>
-                  <a href="#" aria-label="facebook">facebook</a>
+                <li class="element">
+                  <a href="#" aria-label="facebook"><span class="placeholder"></a>
                 </li>
-                <li>
-                  <a href="#" aria-label="linkedin">linkedin</a>
+                <li class="element">
+                  <a href="#" aria-label="linkedin"><span class="placeholder"></a>
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/robert-jakis.jpg"
                 alt="фото роберта жакиса"
@@ -173,21 +180,21 @@
               <h3 class="title" lang="en">Robert Jakis</h3>
               <p lang="en">Marketing</p>
               <ul class="team-links list">
-                <li>
-                  <a href="#" aria-label="instagram">instagram</a>
+                <li class="element">
+                  <a href="#" aria-label="instagram"><span class="placeholder"></a>
                 </li>
-                <li>
-                  <a href="#" aria-label="twitter">twitter</a>
+                <li class="element">
+                  <a href="#" aria-label="twitter"><span class="placeholder"></a>
                 </li>
-                <li>
-                  <a href="#" aria-label="facebook">facebook</a>
+                <li class="element">
+                  <a href="#" aria-label="facebook"><span class="placeholder"></a>
                 </li>
-                <li>
-                  <a href="#" aria-label="linkedin">linkedin</a>
+                <li class="element">
+                  <a href="#" aria-label="linkedin"><span class="placeholder"></a>
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/martin-doe.jpg"
                 alt="фото мартина дое"
@@ -196,17 +203,17 @@
               <h3 class="title" lang="en">Martin Doe</h3>
               <p lang="en">UI Designer</p>
               <ul class="team-links list">
-                <li>
-                  <a href="#" aria-label="instagram">instagram</a>
+                <li class="element">
+                  <a href="#" aria-label="instagram"><span class="placeholder"></a>
                 </li>
-                <li>
-                  <a href="#" aria-label="twitter">twitter</a>
+                <li class="element">
+                  <a href="#" aria-label="twitter"><span class="placeholder"></a>
                 </li>
-                <li>
-                  <a href="#" aria-label="facebook">facebook</a>
+                <li class="element">
+                  <a href="#" aria-label="facebook"><span class="placeholder"></a>
                 </li>
-                <li>
-                  <a href="#" aria-label="linkedin">linkedin</a>
+                <li class="element">
+                  <a href="#" aria-label="linkedin"><span class="placeholder"></a>
                 </li>
               </ul>
             </li>
@@ -215,32 +222,34 @@
       </section>
       <!-- Секция с описанием клиентов-->
       <section class="clients-section">
+        <div class="container">
         <h2 class="section-title">Постоянные клиенты</h2>
         <!-- SVG картинки не вставлял т.к. Репета на вебинаре сказал, что они будут добавляться с помощью CSS -->
         <ul class="clients list">
-          <li>
-            <a href="#">Company</a>
+          <li class="item">
+            <a href="#"><span class="client-logo"></span></a>
           </li>
-          <li>
-            <a href="#">Company</a>
+          <li class="item">
+            <a href="#"><span class="client-logo"></span></a>
           </li>
-          <li>
-            <a href="#">Company</a>
+          <li class="item">
+            <a href="#"><span class="client-logo"></span></a>
           </li>
-          <li>
-            <a href="#">Company</a>
+          <li class="item">
+            <a href="#"><span class="client-logo"></span></a>
           </li>
-          <li>
-            <a href="#">Company</a>
+          <li class="item">
+            <a href="#"><span class="client-logo"></span></a>
           </li>
-          <li>
-            <a href="#">Company</a>
+          <li class="item">
+            <a href="#"><span class="client-logo"></span></a>
           </li>
-        </ul>
+        </ul></div>
       </section>
     </main>
     <footer>
-      <div class="container">
+      <div class="container main-wrapper">
+        <div class="contacts-wrapper">
         <a class="logo-footer" href="./index.html" lang="en"
           ><span class="logo-part">Web</span> Studio</a
         >
@@ -249,25 +258,26 @@
 
           <a href="mailto:info@devstudio.com">info@devstudio.com</a>
           <a href="tel:+380961111111">+38 096 111 11 11</a>
-        </address>
+        </address></div>
 
+        <div class="join-wrapper">
         <p class="join-title">присоединяйтесь</p>
         <ul class="join list">
-          <li>
+          <li class="item">
             <a href="#" aria-label="instagram">instagram</a>
           </li>
-          <li>
+          <li class="item">
             <a href="#" aria-label="twitter">twitter</a>
           </li>
-          <li>
+          <li class="item">
             <a href="#" aria-label="facebook">facebook</a>
           </li>
-          <li>
+          <li class="item">
             <a href="#" aria-label="linkedin">linkedin</a>
           </li>
-        </ul>
-        <p class="disclaimer">2020 | Developed by GoIT Students</p>
-      </div>
+        </ul></div>
+        
+      </div><p class="disclaimer">2020 | Developed by GoIT Students</p>
     </footer>
   </body>
 </html>
