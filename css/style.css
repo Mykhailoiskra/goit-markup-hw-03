@@ -3,7 +3,7 @@
   --black-title-color: #212121;
   --white-title-color: #ffffff;
   --accent-color: #2196f3;
-}
+
 body {
   background-color: #fff;
   color: var(--primary-text-color);
@@ -14,6 +14,10 @@ body {
 /* All lists on the page */
 .list {
   list-style: none;
+}
+/* HEADER */
+.container {
+  background-color: blue;
 }
 
 /* Logo */
