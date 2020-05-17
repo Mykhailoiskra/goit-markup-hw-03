@@ -3,6 +3,7 @@
   --black-title-color: #212121;
   --white-title-color: #ffffff;
   --accent-color: #2196f3;
+}
 
 body {
   background-color: #fff;
@@ -11,13 +12,21 @@ body {
   letter-spacing: 0.03em;
 }
 
+.container {
+  width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* All lists on the page */
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 /* HEADER */
 .container {
-  background-color: blue;
+  outline: 2px solid blue;
 }
 
 /* Logo */
@@ -28,6 +37,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  display: inline-block;
 }
 .logo-header span {
   color: var(--accent-color);
@@ -70,6 +80,9 @@ body {
 /* Hero */
 .hero {
   background-color: grey;
+  text-align: center;
+
+  outline: 2px solid red;
 }
 
 .hero-title {
@@ -78,9 +91,11 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  margin-top: 0;
+  margin-bottom: 46px;
 }
 
 .hero-button {
@@ -90,12 +105,19 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  text-align: center;
   letter-spacing: 0.06em;
+
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  min-width: 200px;
 }
 
 /* Компетенции */
 
+.competencies {
+  padding-top: 94px;
+}
 .competencies .title {
   color: var(--black-title-color);
 
@@ -103,38 +125,63 @@ body {
   font-size: 14px;
   line-height: 1.1;
   text-transform: uppercase;
+
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
+.is-hidden {
+  display: none;
+}
 .competencies .description {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
+  margin: 0;
 }
 
 /* Секция с описанием услуг веб-студии */
 
+.activities {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .section-title {
   color: var(--black-title-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .examples .link {
   color: #fff;
+  background: rgba(47, 48, 58, 0.8);
   text-decoration: none;
 
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
   text-transform: uppercase;
+
+  display: inline-block;
+  width: 380px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-align: center;
 }
 
 /* Наша команда */
 
+.team img {
+  margin-bottom: 30px;
+}
 .team-section {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team .title {
@@ -143,12 +190,16 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .team p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 28px;
 }
 
 .team-links a {
@@ -161,6 +212,10 @@ body {
 }
 /* Постоянные клиенты */
 
+.clients-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .clients a {
   text-decoration: none;
   color: inherit;
@@ -184,6 +239,8 @@ footer {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 .logo-footer span {
   color: var(--accent-color);
@@ -235,7 +292,16 @@ footer {
 
 /* СТРАНИЦА ПОРТФОЛИО */
 
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* Кнопки фильтра */
+
+.filter-menu {
+  margin-bottom: 50px;
+}
 .filter-menu button {
   background-color: #f5f4fa;
   color: var(--black-title-color);
@@ -243,6 +309,11 @@ footer {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
+  display: inline-block;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: transparent;
+  cursor: pointer;
 }
 
 .filter-menu button:hover,
@@ -257,6 +328,10 @@ footer {
 .products a {
   text-decoration: none;
   color: inherit;
+  outline: 2px solid red;
+}
+.products img {
+  margin-bottom: 20px;
 }
 
 .product-name {
@@ -266,16 +341,20 @@ footer {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .product-type {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
+  margin: 0;
 }
 
 .product-description {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
+  margin: 0;
 }
