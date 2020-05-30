@@ -12,6 +12,13 @@ body {
   letter-spacing: 0.03em;
 }
 
+img {
+  max-width: 100%; 
+  display: block;
+  height: auto; 
+}
+
+/* Утилиты */
 .container {
   width: 1200px;
   margin-left: auto;
@@ -20,12 +27,24 @@ body {
   padding-right: 15px;
 }
 
-/* All lists on the page */
 .list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
+.visually-hidden {
+  position: absolute; 
+  width: 1px;
+  height: 1px;
+  margin: -1px; 
+  border: 0; 
+  padding: 0; 
+  clip: rect(0 0 0 0);
+  overflow: hidden; 
+}
+
+
 /* HEADER */
 
 /* Header-nav */
@@ -171,8 +190,6 @@ body {
   margin-bottom: 10px;
 }
 
-.is-hidden {
-  display: none;
 }
 .competencies .description {
   font-weight: 400;
@@ -433,6 +450,7 @@ footer {
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
+  border-top: 1px solid #ECECEC;
 }
 
 /* Кнопки фильтра */
@@ -484,9 +502,6 @@ footer {
   /* outline: 2px dotted blue;  */
 }
 
-.products img {
-  display: block;  
-  }
 
 .products .item:nth-child(3n) {
   margin-right: 0;
@@ -522,7 +537,7 @@ overflow: hidden;}
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   
  
 }
